@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: black;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* หน้าแรก */
+#Home {
+  position: relative;
+  top: 25%;
+}
+
+.image img {
+  width: 250px;       /* ปรับขนาดรูปภาพให้เล็กลง (เช่น 250px) */
+  height: auto;       /* ให้คงอัตราส่วนเดิมของภาพ */
+  border-radius: 10px; /* ทำให้มุมโค้งมน*/
+  display: block;
+  margin: 20px auto;  /* จัดรูปให้อยู่ตรงกลาง */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* ใส่เงาสวย ๆ */
+}
+
+button {
+  background: transparent;
+  border: 2px solid #00ff99;
+  color: #00ff99;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #00ff99;
+  color: black;
+}
+
+/* Canvas ของ Matrix */
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+h1 {
+     font-size: 50px;
+    font-weight: bold;
+    color: #a8e6ff;
+    text-shadow:
+        0 0 5px #a8e6ff,
+        0 0 15px #5edbff,
+        0 0 30px #26caff;
+
+}
+
+#enterBtn {
+  position: relative;
+  background: none;
+  color: #00ff99;
+  border: 2px solid #00ff99;
+  padding: 12px 35px;
+  font-size: 18px;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+#enterBtn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, #00ff99, transparent);
+  transition: 0.5s;
+}
+
+#enterBtn:hover::before {
+  left: 100%;
+}
