@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="matrix.css">
+  <script src="matrix.js" defer></script>
+</head>
+<body class="main">
+  <a href="Index.html" class="home-icon">
+    <button>Home</button>
+  </a>
+      <span class="aboutme" onclick="goTo('about.html')">
+        About me
+      </span>
+
+      <span class="certificate" onclick="goTo('certificate.html')">
+        Certificates
+      </span>
+
+      <span class="skills" onclick="goTo('skills.html')">
+        Skills
+      </span>
+       <script>
+function goTo(page, effect = 'glitch-out') {  // ✅ เปลี่ยนชื่อเอฟเฟกต์ได้ เช่น 'scan-out' หรือ 'matrix-fall'
+  document.body.classList.add(effect);
+  setTimeout(() => {
+    window.location.href = page;
+  }, 800); // ให้เวลา animation เล่นจบก่อน
+}
+</script>
+
+</body>
+
+</html>

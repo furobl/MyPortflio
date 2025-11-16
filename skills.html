@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="skills.css">
+  <link rel="stylesheet" href="matrix.css">
+  <script src="matrix.js" defer></script>
+</head>
+<body class="ABOUT">
+     <header class="Top">`
+      <nav class="top-nav">
+        <button type="button" onclick="goTo('Index.html','digital-out')">Home</button>
+        <button type="button" onclick="goTo('about.html','digital-out')">About me</button>
+        <button type="button" onclick="goTo('skills.html','digital-out')">Certificates</button>
+      </nav>
+    </header>
+
+    <div class="TopSpacer"></div>
+
+    <div class="middle">
+      <h1>My Skills</h1>
+      <div class="skill-item">
+      <img src="Image/Unity2.png" alt="">
+      <p>Unity</p>
+      </div>
+      <div class="skill-item">
+        <img src="Image/Pr2.png" alt="">
+        <p>Premiere pro</p>
+      </div>
+      <div class="skill-item">
+        <img src="Image/Lr2.png" alt="">
+        <p>Lightroom</p>
+      </div>
+      <div class="skill-item">
+        <img src="Image/Html2.png" alt="">
+        <p>Html</p>
+      </div>
+      <div class="skill-item">
+        <img src="Image/Css3.png" alt="">
+        <p>CSS</p>
+      </div>
+      <div class="skill-item">
+        <img src="Image/C2.png" alt="">
+        <p>C#</p>
+      </div>
+    </div>
+
+
+
+    <script>
+function goTo(page, effect = 'digital-out') {  
+  document.body.classList.add(effect);
+  setTimeout(() => {
+    window.location.href = page;
+  }, 700);
+}
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

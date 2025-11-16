@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="matrix.css">
+    <script src="matrix.js" defer></script>
+</head>
+<body class="ABOUT">
+    <!-- Top bar -->
+    <header class="Top">
+      <nav class="top-nav">
+        <button type="button" onclick="goTo('Index.html','digital-out')">Home</button>
+        <button type="button" onclick="goTo('certificate.html','digital-out')">Certificates</button>
+        <button type="button" onclick="goTo('skills.html','digital-out')">Skills</button>
+      </nav>
+    </header>
+
+    <div class="TopSpacer"></div>
+
+
+ <div class="middle">
+      <h1>Profile</h1>
+      <span class="Profile">
+      <img src="Image/Me.jpg" alt="">
+      </span>
+      <!-- กล่อง 3 ส่วน: ซ้าย กึ่งกลาง ขวา -->
+      <div class="info-container">
+        <!-- ซ้าย: ส่วนตัว -->
+        <span class="ส่วนตัว">
+          <h2>ข้อมูลส่วนตัว</h2>
+          <p>ชื่อ-สกุล : นายธีร์ธวัช ปิยประเสริฐศรี</p>
+          <p>ชื่อเล่น : ฟู่</p>
+          <p>วันเกิด : 25 มีนาคม 2551</p>
+          <p>ที่อยู่ : 4/77 หมู่ 6 ถนนเจริฐประดิษฐ์ ซอย 12 ตำบลรูสะมิแล อำเภอเมือง จังหวัดปัตตานี 94000</p>
+        </span>
+
+        <!-- ขวา: ครอบครัว -->
+        <span class="ครอบครัว">
+          <h2>ข้อมูลครอบครัว</h2>
+          <p>บิดา : นายเอกสิทธิ์ ปิยประเสริฐศรี</p>
+          <p>อาชีพ : ช่างภาพอิสระ</p>
+          <p>มารดา : นางสาวจรัสศรี พรหมศักดิ์</p>
+          <p>อาชีพ : แม่บ้าน</p>
+        </span>
+      </div>
+
+  <div class="contact-box">
+
+  <div class="contact-item">
+    <img src="Image/FB.webp" alt="Facebook">
+    <p><strong>Facebook :</strong><br>ธีร์ธวัช ปิยประเสริฐศรี</p>
+  </div>
+
+  <div class="contact-item">
+    <img src="Image/IG 5.png" alt="Instagram">
+    <p><strong>Instagram :</strong><br>nongfu_fufi</p>
+  </div>
+
+  <div class="contact-item">
+    <img src="Image/Email.png" alt="Email">
+    <p><strong>Email :</strong><br>thithawat.p@pcshsst.ac.th</p>
+  </div>
+
+  <div class="contact-item">
+    <img src="Image/Line 5.png" alt="Line">
+    <p><strong>Line ID :</strong><br>futonpai</p>
+  </div>
+
+  <div class="contact-item">
+    <img src="Image/Phone.png" alt="Phone">
+    <p><strong>โทรศัพท์ :</strong><br>097-959-3300</p>
+  </div>
+
+</div>
+
+  <div class="ศึกษา">
+    <h2>ข้อมูลการศึกษา</h2>
+    <div class="education">
+      <img src="Image/จภ.png" alt="">
+      <h4>ชั้นมัธยมต้น 1-3</h4>
+      <p><strong>โรงเรียนวิทยาศาสตร์จุฬาภรณราชวิทยาลัย สตูล</strong></p>
+      <p>GPAX : 3.83 </p>
+    </div>
+    <div class="education">
+      <img src="Image/จภ.png" alt="">
+      <h4>ชั้นมัธยมปลาย 4-6</h4>
+      <p><strong>โรงเรียนวิทยาศาสตร์จุฬาภรณราชวิทยาลัย สตูล</strong></p>
+      <p>GPAX : 3.87</p>
+    </div>
+  <div class="grade">
+    <img src="Image/Front.jpg" alt="">
+
+    <img src="Image/Back.jpg" alt="">
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+  <script>
+
+function goTo(page, effect = 'glitch-out') {  
+  document.body.classList.add(effect);
+  setTimeout(() => {
+    window.location.href = page;
+  }, 800); // ให้เวลา animation เล่นจบก่อน
+}
+</script>
+
+    
+</body>
+</html>

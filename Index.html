@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="matrix.css">
+    <script src="matrix.js" defer></script>
+</head>
+<body>
+    <canvas id="matrix"></canvas>
+    <div id="Home" > 
+        <h1>My Profile</h1>
+        <div class="image"><img src="Image/รูปถ่าย.jpg" alt=""></div>
+        <h2>นายธีร์ธวัช ปิยประเสริฐศรี</h2>
+        <h2>Thithawat Piyaprasertsri</h2>
+        <button id="enterBtn">Next</button>
+    </div> 
+  
+  <script>
+function goTo(page, effect = 'glitch-out') {  // ✅ เปลี่ยนชื่อเอฟเฟกต์ได้ เช่น 'scan-out' หรือ 'matrix-fall'
+  document.body.classList.add(effect);
+  setTimeout(() => {
+    window.location.href = page;
+  }, 800); // ให้เวลา animation เล่นจบก่อน
+}
+</script>
+  <script>
+    const enterBtn = document.getElementById('enterBtn');
+    enterBtn.addEventListener('click', () => {
+      goTo('home.html', 'glitch-out'); // ใช้เอฟเฟกต์ 'glitch-out' เมื่อคลิกปุ่ม
+    });
+  </script>
+    
+</body>
+</html>
