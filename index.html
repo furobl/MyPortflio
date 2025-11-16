@@ -11,28 +11,33 @@
 </head>
 <body>
     <canvas id="matrix"></canvas>
-    <div id="Home" > 
+
+    <div id="Home"> 
         <h1>My Profile</h1>
-        <div class="image"><img src="Image/รูปถ่าย.jpg" alt=""></div>
+
+        <!-- แก้ path รูปตรงนี้ -->
+        <div class="image"><img src="รูปถ่าย.jpg" alt=""></div>
+
         <h2>นายธีร์ธวัช ปิยประเสริฐศรี</h2>
         <h2>Thithawat Piyaprasertsri</h2>
         <button id="enterBtn">Next</button>
     </div> 
-  
-  <script>
-function goTo(page, effect = 'glitch-out') {  // ✅ เปลี่ยนชื่อเอฟเฟกต์ได้ เช่น 'scan-out' หรือ 'matrix-fall'
+    
+<script>
+function goTo(page, effect = 'glitch-out') {  
   document.body.classList.add(effect);
   setTimeout(() => {
     window.location.href = page;
-  }, 800); // ให้เวลา animation เล่นจบก่อน
+  }, 800);
 }
 </script>
-  <script>
-    const enterBtn = document.getElementById('enterBtn');
-    enterBtn.addEventListener('click', () => {
-      goTo('home.html', 'glitch-out'); // ใช้เอฟเฟกต์ 'glitch-out' เมื่อคลิกปุ่ม
-    });
-  </script>
-    
+
+<script>
+const enterBtn = document.getElementById('enterBtn');
+enterBtn.addEventListener('click', () => {
+  goTo('home.html', 'glitch-out');
+});
+</script>
+
 </body>
 </html>
