@@ -108,24 +108,20 @@
   100% { background-position: 0% 50%; }
 }
 
-/* ---------- ปุ่มไอคอนกลับหน้าแรก ---------- */
-.home-icon {
-  position: fixed;      /* ล็อกตำแหน่งไม่ให้เลื่อนตามหน้า */
-  top: 20px;            /* ระยะห่างจากขอบบน */
-  left: 20px;           /* ระยะห่างจากขอบซ้าย */
-  z-index: 1000;        /* ให้อยู่บนสุดขององค์ประกอบอื่น */
-  cursor: pointer;      /* เปลี่ยนเคอร์เซอร์เป็นรูปมือ */
-  transition: transform 0.3s ease, opacity 0.3s ease; /* ทำให้มีอนิเมชันเวลา hover */
-}
+@media (max-width: 768px) {
 
-.home-icon img {
-  width: 200px;          /* ขนาดของไอคอน */
-  height: 200px ;
-  filter: drop-shadow(0 0 5px #00ccff); /* เงาเรืองแสงสีน้ำเงิน */
-}
+  .main {
+    flex-direction: column;   /* วางลงล่างแทน */
+    gap: 20px;
+    padding: 20px;
+  }
 
-/* เอฟเฟกต์เวลาเอาเมาส์วาง */
-.home-icon:hover {
-  transform: scale(1.2); /* ขยายเล็กน้อย */
-  opacity: 0.8;          /* จางลงนิดหนึ่ง */
+  .certificate,
+  .aboutme,
+  .skills {
+    width: 90%;               /* ขยายเต็มจอ */
+    height: 200px;            /* ลดความสูงเพื่อพอดีจอ */
+    position: static;         /* ❗ ยกเลิก absolute บนมือถือ */
+    font-size: 28px;          /* ลดขนาดตัวอักษร */
+  }
 }
